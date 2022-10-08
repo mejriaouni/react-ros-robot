@@ -24,9 +24,9 @@ class Connection extends Component {
         });
 
         this.state.ros.on("close", () => {
-            console.log("connection is closed ");
+           // console.log("connection is closed ");
             this.setState({ connected: false });
-            console.log(Config.ROSBRIDGE_SERVER_IP );
+            //console.log(Config.ROSBRIDGE_SERVER_IP );
 
             //try to reconnect after a fixed period of time 
             setTimeout(() => {
