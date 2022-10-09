@@ -3,6 +3,8 @@ import Connection from "./Connection";
 import Teleoperation from "./Teleoperation";
 import { Row, Col, Container, Button } from "react-bootstrap";
 import RobotState from "./RobotState";
+import Map from "./Map";
+
 
 
 
@@ -31,15 +33,15 @@ class Home extends Component {
                         <Col>
                             <Teleoperation />
                         </Col>
-                        <Col>
-                        <h1>Map</h1>
-                        <p>this region will be used later for displaying a map</p>
-                        </Col>
                     </Row>
                     <Row>
                         <Col>
-                        <RobotState />
+                            <RobotState />
 
+                        </Col>
+                        <Col>
+                            <h1>Map</h1>
+                            <Map />
                         </Col>
                     </Row>
                 </Container>
